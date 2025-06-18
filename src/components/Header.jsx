@@ -1,4 +1,5 @@
 import './Header.css'
+import { Link } from 'react-router-dom'
 function Header() {
   return (
     <div className='nav__bar'>
@@ -20,21 +21,37 @@ function Header() {
           <div className='language__btn'>
             <img src='./images/flag.png' alt='flag icon' />
             <div className='language'>Qazaqsha</div>
+            <i className="fa fa-chevron-down"></i>
           </div>
         </div>
       </div>
-
-
 
 
       <div className='search__section'>
         <div className='logo__search'>
           <img src='./images/logo.svg' alt='logo'></img>
           <img src='./images/logo-text.svg' alt='logo-text'></img>
+
+          <div className="search-bar">
+            <button className="country-btn">
+              <img src="./images/flag.png" alt="KZ" />
+              <span>Kazakhstan</span>
+              <i className="fa fa-chevron-down"></i>
+            </button>
+
+            <div className="divider"></div>
+
+            <div className="search-icon">
+              <i className="fa fa-search"></i>
+            </div>
+
+            <input type="text" placeholder="Job title, keyword, company" />
+          </div>
+
         </div>
         <div className='registration__bar'>
-          <a>Sign In</a>
-          <a>Sign Up</a>
+          <Link>Sign In</Link>
+          <Link to="/register">Sign Up</Link>
         </div>
       </div>
 
