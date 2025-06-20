@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <div className='nav__bar'>
+      <div className='container'>
       <div className='navigation'>
         <div className='nav__buttons'>
-          <a href='#'>Home</a>
-          <a href='#'>Find Job</a>
-          <a href='#'>Employers</a>
-          <a href='#'>Candidates</a>
-          <a href='#'>Pricing Plans</a>
-          <a href='#'>Customer Supports</a>
+          <Link to="home">Basty bet</Link>
+          <Link to="jobboard">Jumis tabu</Link>
+          <Link to='#'>Jumis berushiler</Link>
+          <Link to='#'>Umitkerler</Link>
+          <Link to="price">Baga zhospary</Link>
+          <Link to='#'>Tutynushyga qoldau</Link >
         </div>
 
         <div className='contacts'>
@@ -29,7 +30,7 @@ function Header() {
 
       <div className='search__section'>
         <div className='logo__search'>
-          <img src='./images/logo.svg' alt='logo'></img>
+          <div className='logo'><img src='./images/logo.svg' alt='logo'></img></div>
           <img src='./images/logo-text.svg' alt='logo-text'></img>
 
           <div className="search-bar">
@@ -45,14 +46,15 @@ function Header() {
               <i className="fa fa-search"></i>
             </div>
 
-            <input type="text" placeholder="Job title, keyword, company" />
+            <input type="text" placeholder="Jumistin aty, kilt sozder, company" />
           </div>
 
         </div>
         <div className='registration__bar'>
-          <Link>Sign In</Link>
-          <Link to="/register">Sign Up</Link>
+          <Link>Kiru</Link>
+          <Link to="/register">Tirkelu</Link>
         </div>
+      </div>
       </div>
 
     </div >

@@ -4,19 +4,23 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import RegisterForm from './Pages/RegisterPage'
+import PricePage from './Pages/PricePage'
+import JobBoard from './JobBoard/JobBoard'
 
 function App() {
   return (
     <>
-   <Header/>
-    <Routes>
+      <Header />
+      <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/register" element={<RegisterForm />} />
+        <Route path="/home" element={<Main />} />
+        <Route path="/price" element={<PricePage/>} />
+        <Route path="/jobboard" element={<JobBoard/>} />
       </Routes>
-    <Footer/>
-   </>
+      <Footer />
+    </>
   )
 }
 
 export default App
-  

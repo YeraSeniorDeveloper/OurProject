@@ -1,0 +1,30 @@
+.construction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #808aa1;
+  color: #f1f5f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.construction-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.construction-text {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 500px;
+}
+
+.back-button {
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+}
+

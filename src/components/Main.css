@@ -1,29 +1,82 @@
 .section__1 {
-    width: 100%;
-    height: 530px;
-    background-color: #FFFFFF;
+  padding: 100px 150px;
+  background-color: #FFFFFF;
 }
+
+.container__2 {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+}
+
+.job__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.job__list a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
+
+
+
 
 .section__2 {
-    width: 100%;
-    height: 522px;
-    background-color: rgb(236, 0, 0);
+  width: 100%;
+  background-color: #F1F2F4;
 }
 
+.container__3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 250px;
+  gap: 50px;
+}
+
+.section__title2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.steps{
+  display: flex; 
+}
+
+
+
+
+
+
 .section__3 {
-    width: 100%;
-    height: 554px;
-    background-color: #FFFFFF;
+  width: 100%;
+  height: 554px;
+  background-color: #FFFFFF;
 }
 
 .section__4 {
-    width: 100%;
-    height: 1210px;
-    background-color: rgb(236, 0, 0);
+  width: 100%;
+  height: 1210px;
+  background-color: #F1F2F4;
 }
 
 .section__5 {
-    width: 100%;
-    height: 490px;
-    background-color: #FFFFFF;
+  width: 100%;
+  height: 490px;
+  background-color: #FFFFFF;
 }
