@@ -14,19 +14,19 @@ function RegisterPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Регистрация успешно отправлена!');
+    alert('Registracia satti otti!');
     console.log('Данные:', formData);
-    // тут можешь вставить POST запрос на сервер
+  
   };
 
   return (
     <div className="register-container">
-      <h2>Регистрация</h2>
+      <h2>Account ashu</h2>
       <form onSubmit={handleSubmit} className="register-form">
         <input
           type="text"
           name="username"
-          placeholder="Имя пользователя"
+          placeholder="Paidalanushy aty"
           value={formData.username}
           onChange={handleChange}
           required
@@ -42,12 +42,12 @@ function RegisterPage() {
         <input
           type="password"
           name="password"
-          placeholder="Пароль"
+          placeholder="Qupiasoz"
           value={formData.password}
           onChange={handleChange}
           required
         />
-        <button type="submit">Зарегистрироваться</button>
+        <button type="submit">Account ashu</button>
       </form>
     </div>
   );

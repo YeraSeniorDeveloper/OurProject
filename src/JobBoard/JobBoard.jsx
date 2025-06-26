@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import JobForm from "./JobForm";
 import JobList from "./JobList";
+import "../App.css";
+import "../JobBoard/JobBoard.css";
+import { ref, push, set, onValue } from "firebase/database";
+import { db } from "../firebaseConfig";
 
 function JobBoard() {
   const [jobs, setJobs] = useState([]);
@@ -14,14 +18,31 @@ function JobBoard() {
     }
 
     const newJob = { title, salary };
-    setJobs([...jobs, newJob]);
+
+    const jobsRef = ref(db, "jobs/");
+    const newJobRef = push(jobsRef);
+    set(newJobRef, newJob);
 
     setTitle("");
     setSalary("");
   };
 
+
+  useEffect(() => {
+    const jobsRef = ref(db, "jobs/");
+    onValue(jobsRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const jobsArray = Object.values(data);
+        setJobs(jobsArray);
+      } else {
+        setJobs([]);
+      }
+    });
+  }, []);
+
   return (
-    <div>
+    <div className="container7">
       <h2>Jumis tabu/qosu</h2>
       <JobForm
         title={title}

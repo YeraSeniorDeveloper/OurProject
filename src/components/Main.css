@@ -27,7 +27,13 @@
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
+}
 
+.job__list a p{
+  font-family: 'Inter',sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #767F8C;
 }
 
 
@@ -35,27 +41,48 @@
 
 
 .section__2 {
-  width: 100%;
-  background-color: #F1F2F4;
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
-.container__3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 250px;
-  gap: 50px;
-}
-
-.section__title2 {
-  font-family: 'Inter', sans-serif;
+.title {
+  font-family: 'Inter',sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 35px;
+  margin-bottom: 60px;
 }
 
-.steps{
-  display: flex; 
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step .icon {
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.step h3 {
+  font-family: 'Inter',sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #666;
 }
 
 
@@ -76,7 +103,21 @@
 }
 
 .section__5 {
-  width: 100%;
-  height: 490px;
+ 
   background-color: #FFFFFF;
+}
+.container4{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background-color: aqua;
+  padding: 100px 0;
+  flex-wrap: wrap;
+}
+.square{
+   
+  height: 290px;
+  width: 600px;
+  background-color: aquamarine;
+  border-radius: 12px;
 }
