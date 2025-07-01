@@ -1,12 +1,14 @@
 import React from "react";
-import "../App.css";
+import "../JobBoard/JobBoard.css";
+
 function JobList({ jobs }) {
   return (
-    <ul>
+    <ul className="job-list">
       {jobs.map((job, index) => (
         <li className="li" key={index}>
           <span>{job.title}</span>
-          <span>{job.salary} ₸</span>
+          <span>{job.salary} KZT</span>
+          <span>{job.city}</span>
         </li>
       ))}
     </ul>

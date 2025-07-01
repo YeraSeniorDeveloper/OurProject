@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #808aa1;
+  background-color: #a2a5ac;
   color: #f1f5f9;
-  padding: 40px 20px;
+  padding: 100px 0;
   text-align: center;
+  gap: 30px;
 }
 
 .construction-title {
@@ -23,8 +24,7 @@
 
 .back-button {
   padding: 12px 24px;
-  background-color: #3b82f6;
+  background-color: #ED9728;
   color: white;
   text-decoration: none;
 }
-
